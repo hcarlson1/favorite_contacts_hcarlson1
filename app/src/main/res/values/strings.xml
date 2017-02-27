@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">favorite_contacts_hcarlson1</string>
+
+    <string name="contacts_names">
+        <item>Mike Zupfer</item>
+        <item>Heather Carlson</item>
+        <item>Nick Behler</item>
+    </string>
+
+    <string name="contacts_number">
+        <item>6122368854</item>
+        <item>7632768165</item>
+        <item>6513734309</item>
+    </string>
+</resources>
