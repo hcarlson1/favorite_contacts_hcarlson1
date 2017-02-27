@@ -9,7 +9,8 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.heather.favorite_contacts_hcarlson1.MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:weightSum="1">
 
     <TextView
         android:layout_width="wrap_content"
@@ -19,13 +20,125 @@
         android:textStyle="normal|bold"
         android:id="@+id/textView" />
 
-    <ListView
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="256dp"
-        android:id="@+id/listViewContacts" />
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Mike \nZupfer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewContact1"
+            android:layout_weight="1"
+            android:textStyle="normal|bold"
+            android:textAlignment="viewStart" />
+
+        <TextView
+            android:text="6122368854"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewContact1Num"
+            android:layout_weight="1"
+            android:textAlignment="center" />
+
+        <Button
+            android:text="TEXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button1Text"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="CALL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button1Call"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Nick \nBehler "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewContact2"
+            android:layout_weight="1"
+            android:textStyle="normal|bold"
+            android:textAlignment="viewStart" />
+
+        <TextView
+            android:text="6513734309"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewContact2Num"
+            android:layout_weight="1"
+            android:textAlignment="center" />
+
+        <Button
+            android:text="TEXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button2Text"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="CALL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button2Call"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Megan \nHenry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewContact3"
+            android:layout_weight="1"
+            android:textStyle="normal|bold"
+            android:textAlignment="viewStart" />
+
+        <TextView
+            android:text="9524541397"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewContact3Num"
+            android:layout_weight="1"
+            android:textAlignment="center" />
+
+        <Button
+            android:text="TEXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button3Text"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="CALL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button3Call"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.11" />
 
     <TextView
-        android:text="Status"
+        android:text="Status: "
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textViewStatus" />
